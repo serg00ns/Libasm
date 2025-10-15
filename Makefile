@@ -1,4 +1,4 @@
-SRCS		=	ft_write.s ft_read.s ft_strlen.s ft_strcpy.s ft_strdup.s
+SRCS		=	ft_write.s ft_read.s ft_strlen.s ft_strcpy.s ft_strdup.s ft_strcmp.s
 OBJS		=	$(SRCS:.s=.o)
 NASM		=	nasm
 NASM_FLAGS	=	-f elf64
