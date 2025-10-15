@@ -3,10 +3,13 @@
 int ft_write(int fd, char *buf, int size);
 int ft_read(int fd, char *buf, int size);
 size_t ft_strlen(char *buf);
+char *ft_strcpy(char *restrict dst, const char *restrict src);
+
 
 int main()
 {
 	char *str = "hello world";
-	printf("len = %ld\n", ft_strlen(str));
+	char store[15];
+	printf("len = %s\n", ft_strcpy(store, str));
 	return 0;
 }
