@@ -1,6 +1,3 @@
-
-
-
 global ft_read
 
 ft_read:
@@ -9,4 +6,3 @@ ft_read:
 	ret
 
 section .note.GNU-stack
-
