@@ -1,12 +1,10 @@
-
-
 global ft_strlen
 
 ft_strlen:
 	xor rsi, rsi
 	.loop:
-		mov al, [rdi + rsi]
-		cmp al, 0
+		movzx rax, byte [rdi + rsi]
+		cmp rax, 0
 		je	.return
 		inc rsi
 		jmp .loop
@@ -14,4 +12,3 @@ ft_strlen:
 		mov rax, rsi
 		ret
 
-section .note.GNU-stack

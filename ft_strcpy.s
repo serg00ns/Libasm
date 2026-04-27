@@ -1,12 +1,13 @@
 global ft_strcpy
 
 
+
 ft_strcpy:
 	xor rdx, rdx	
 	.loop:
-		mov r10b, [rsi + rdx] ; src r10b
-		mov BYTE [rdi + rdx], r10b ; to dst
-		mov al, [rsi + rdx] 
+		movzx r10, byte [rsi + rdx] ; from src 
+		mov byte [rdi + rdx], r10b ; to dest
+		movzx rax, byte [rsi + rdx]
 		cmp al, 0
 		je .return
 		inc rdx
@@ -15,4 +16,3 @@ ft_strcpy:
 		mov rax, rdi
 		ret
 
-section .note.GNU-stack

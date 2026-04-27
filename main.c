@@ -9,6 +9,7 @@ char *ft_strdup(char *str);
 int ft_strcmp(const char *s1, const char *s2);
 
 
+
 int main()
 {
 	char *a = ft_strdup("ba");
