@@ -20,5 +20,3 @@ ft_strcmp:
 		sub al, cl
 		movsx rax, al
 		ret
-
-section .note.GNU-stack

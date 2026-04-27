@@ -14,6 +14,7 @@ int main()
 {
 	char *a = ft_strdup("ba");
 	char *b = ft_strdup("bm");
+    ft_write(1, "hello\n", 6);
 	printf("len = %d\n", ft_strcmp(a, b));
 	return 0;
 }

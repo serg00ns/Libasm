@@ -8,10 +8,9 @@ ft_strdup:
 	call ft_strlen
 	mov rdi, rax
 	inc rdi
-	call malloc
+	call malloc WRT ..plt
 	mov rdi, rax
 	pop rsi
 	call ft_strcpy
 	ret
 
-section .note.GNU-stack
