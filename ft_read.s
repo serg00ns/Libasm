@@ -2,11 +2,11 @@ global ft_read
 extern __errno_location
 
 ft_read:
-	mov rax, 0
-	syscall
+    mov rax, 0
+    syscall
     cmp rax, 0
     jl set_error
-	ret
+    ret
 
 set_error:
     neg rax
