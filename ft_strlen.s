@@ -1,5 +1,3 @@
-
-
 global ft_strlen
 
 ft_strlen:
@@ -13,5 +11,3 @@ ft_strlen:
 	.return:
 		mov rax, rsi
 		ret
-
-section .note.GNU-stack

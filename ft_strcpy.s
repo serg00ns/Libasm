@@ -1,6 +1,5 @@
 global ft_strcpy
 
-
 ft_strcpy:
 	xor rdx, rdx	
 	.loop:

@@ -1,5 +1,4 @@
 global ft_write
-
 extern __errno_location
 
 ft_write:
@@ -14,4 +13,3 @@ ft_write:
 		call __errno_location wrt ..plt
 		mov dword [rax], ecx
 	ret
-
