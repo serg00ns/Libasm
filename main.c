@@ -1,5 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <errno.h>
+
+
 
 int ft_write(int fd, char *buf, int size);
 int ft_read(int fd, char *buf, int size);
@@ -9,10 +12,14 @@ char *ft_strdup(char *str);
 int ft_strcmp(const char *s1, const char *s2);
 
 
+
+
 int main()
 {
 	char *a = ft_strdup("ba");
 	char *b = ft_strdup("bm");
-	printf("len = %d\n", ft_strcmp(a, b));
+	ft_write(1, "hello world\n", 12);
+	printf("%s %s\n", a, b);
+	printf("len = %d, errno = %d\n", ft_strcmp(a, b), *(__errno_location()));
 	return 0;
 }

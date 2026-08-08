@@ -1,8 +1,16 @@
 global ft_read
+extern __errno_location
 
 ft_read:
 	mov rax, 0
 	syscall
 	ret
-
-section .note.GNU-stack
+	test rax, rax
+	js .err
+	ret
+	.err:
+		neg rax
+		mov ecx, eax
+		call __errno_location wrt ..plt
+		mov dword [rax], ecx
+	ret

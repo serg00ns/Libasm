@@ -11,3 +11,4 @@ The following functions are rewritten in assembly:
 - **write**: writes data to a file descriptor.
 - **read**: reads data from a file descriptor.
 - **strdup**: duplicates a string using `malloc`.
+- errno setted to write read and strdp
