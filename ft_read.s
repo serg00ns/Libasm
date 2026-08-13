@@ -4,7 +4,6 @@ extern __errno_location
 ft_read:
 	mov rax, 0
 	syscall
-	ret
 	test rax, rax
 	js .err
 	ret
@@ -13,4 +12,5 @@ ft_read:
 		mov ecx, eax
 		call __errno_location wrt ..plt
 		mov dword [rax], ecx
+		mov rax, -1
 	ret

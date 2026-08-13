@@ -20,4 +20,5 @@ ft_strdup:
 		mov ecx, 0x12
 		call __errno_location wrt ..plt
 		mov dword [rax], ecx
+		mov rax, 0
 	ret

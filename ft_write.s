@@ -12,4 +12,5 @@ ft_write:
 		mov ecx, eax
 		call __errno_location wrt ..plt
 		mov dword [rax], ecx
+		mov rax, -1
 	ret
